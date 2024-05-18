@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".XemMonAn"
+    android:orientation="vertical"
+    android:weightSum="8">
+    <ImageView
+        android:id="@+id/imgChiTiet"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_weight="2"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray"
+        android:layout_weight="6">
+        <LinearLayout
+            android:paddingTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="8">
+            <TextView
+                android:id="@+id/nameChiTiet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Thịt bò"
+                android:layout_weight="6"
+                android:textSize="30dp"/>
+            <Button
+                android:id="@+id/btLuuChiTiet"
+                android:background="@color/orange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text = "Lưu"
+                android:textSize="20dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:paddingTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imgChuChiTiet"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/img"/>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/nameChuChiTiet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="Hieu"/>
+
+                <TextView
+                    android:id="@+id/tagChuChiTiet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="!Hieu"/>
+
+                <TextView
+                    android:id="@+id/chiaSeChiTiet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="Tôi thích nấu ăn"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/khauphanChiTiet"
+            android:textColor="@color/white"
+            android:textSize="10dp"
+            android:paddingTop="10dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3 người ăn"/>
+
+        <TextView
+            android:id="@+id/thoigianChiTiet"
+            android:textColor="@color/white"
+            android:textSize="10dp"
+            android:paddingTop="10dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="120 phút"/>
+
+        <ScrollView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="350dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nguyên liệu"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:id="@+id/nguyenlieuChiTiet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    android:text="Thit, ca, hai san, com, gao" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cách làm"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:id="@+id/cachLamChiTiet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    android:text="Bước 1 + Bước 2 + Bước 3 + Bước 4"/>
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="6">
+            <Button
+                android:id="@+id/binhLuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bình luận"/>
+            <EditText
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btHuongDanChiTiet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nhấn vào đây để mở video hướng dẫn"
+        android:layout_gravity="bottom"/>
+
+
+</LinearLayout>
